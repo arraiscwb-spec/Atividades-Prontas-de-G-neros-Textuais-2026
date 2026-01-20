@@ -2,38 +2,42 @@
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
     <title>Pack de Atividades Gêneros Textuais 2026</title>
-    <meta name="description" content="O maior banco de atividades de Gêneros Textuais alinhadas à BNCC 2026. Recupere seus finais de semana!" />
+    <meta name="description" content="O maior banco de atividades de Gêneros Textuais alinhadas à BNCC 2026. Recupere seus finais de semana!">
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
-
-    <style>
-      body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:#fff;color:#0f172a}
-      .wrap{max-width:980px;margin:0 auto;padding:28px 18px 64px}
-      .card{border:1px solid #e2e8f0;border-radius:16px;padding:22px;box-shadow:0 8px 30px rgba(15,23,42,.06)}
-      h1{font-size:30px;line-height:1.15;margin:0 0 10px}
-      p{font-size:16px;line-height:1.6;margin:0 0 14px;color:#334155}
-      .btn{display:inline-block;margin-top:10px;padding:12px 16px;border-radius:12px;text-decoration:none;font-weight:800;background:#0ea5e9;color:#fff}
-      .muted{font-size:13px;color:#64748b}
-    </style>
-
-    <!-- META PIXEL -->
+    <!-- ================= META PIXEL ================= -->
     <script>
       !(function (f, b, e, v, n, t, s) {
         if (f.fbq) return;
-        n = f.fbq = function () { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments); };
-        if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = "2.0"; n.queue = [];
-        t = b.createElement(e); t.async = !0; t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s);
+        n = f.fbq = function () {
+          n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
       })(window, document, "script", "https://connect.facebook.net/en_US/fbevents.js");
       fbq("init", "2041143379984342");
       fbq("track", "PageView");
     </script>
-    <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2041143379984342&ev=PageView&noscript=1"/></noscript>
+    <noscript>
+      <img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=2041143379984342&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- =============== FIM META PIXEL =============== -->
 
-    <!-- UTMIFY PIXEL -->
+    <!-- ================= UTMIFY PIXEL ================= -->
     <script>
       window.pixelId = "696d1aa85f65bf26f6fbbc56";
       var a = document.createElement("script");
@@ -42,8 +46,9 @@
       a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
       document.head.appendChild(a);
     </script>
+    <!-- =============== FIM UTMIFY PIXEL =============== -->
 
-    <!-- UTMIFY UTMS -->
+    <!-- ================= UTMIFY UTMS ================= -->
     <script
       src="https://cdn.utmify.com.br/scripts/utms/latest.js"
       data-utmify-prevent-xcod-sck
@@ -51,22 +56,14 @@
       async
       defer
     ></script>
+    <!-- =============== FIM UTMIFY UTMS =============== -->
   </head>
-
   <body>
-    <div class="wrap">
-      <div class="card">
-        <h1>Pack de Atividades — Gêneros Textuais 2026</h1>
-        <p>O maior banco de atividades alinhadas à BNCC 2026. Recupere seus finais de semana e planeje em minutos.</p>
-
-        <!-- Troque o link pelo seu checkout -->
-        <a class="btn" href="#" onclick="try{fbq('track','ViewContent')}catch(e){}">Quero acessar o pack</a>
-
-        <p class="muted" style="margin-top:12px;">Pixels instalados e UTMs funcionando.</p>
-      </div>
-    </div>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
+
 
 
 
