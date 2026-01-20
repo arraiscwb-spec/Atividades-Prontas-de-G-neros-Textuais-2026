@@ -1,11 +1,29 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gêneros Textuais 2026</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1"
+    />
 
-    <!-- META PIXEL -->
+    <title>Pack de Atividades Gêneros Textuais 2026</title>
+    <meta
+      name="description"
+      content="O maior banco de atividades de Gêneros Textuais alinhadas à BNCC 2026. Recupere seus finais de semana!"
+    />
+
+    <link rel="icon" type="image/png" href="/favicon.png" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ================= META PIXEL ================= -->
     <script>
       !(function (f, b, e, v, n, t, s) {
         if (f.fbq) return;
@@ -33,17 +51,31 @@
       fbq("init", "2041143379984342");
       fbq("track", "PageView");
     </script>
+    <noscript>
+      <img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=2041143379984342&ev=PageView&noscript=1"
+      />
+    </noscript>
+    <!-- =============== FIM META PIXEL =============== -->
 
-    <!-- UTMIFY PIXEL -->
+    <!-- ================= UTMIFY PIXEL ================= -->
     <script>
       window.pixelId = "696d1aa85f65bf26f6fbbc56";
       var a = document.createElement("script");
-      a.src = "https://cdn.utmify.com.br/scripts/pixel/pixel.js";
-      a.async = true;
+      a.setAttribute("async", "");
+      a.setAttribute("defer", "");
+      a.setAttribute(
+        "src",
+        "https://cdn.utmify.com.br/scripts/pixel/pixel.js"
+      );
       document.head.appendChild(a);
     </script>
+    <!-- =============== FIM UTMIFY PIXEL =============== -->
 
-    <!-- UTMIFY UTMS -->
+    <!-- ================= UTMIFY UTMS ================= -->
     <script
       src="https://cdn.utmify.com.br/scripts/utms/latest.js"
       data-utmify-prevent-xcod-sck
@@ -51,10 +83,14 @@
       async
       defer
     ></script>
+    <!-- =============== FIM UTMIFY UTMS =============== -->
   </head>
 
   <body>
-    <h1>Gêneros Textuais 2026</h1>
-    <p>Página pronta para anúncios e rastreamento.</p>
+    <div id="root"></div>
+
+    <!-- Se for página estática, este script pode ser removido -->
+    <!-- <script type="module" src="/src/main.tsx"></script> -->
   </body>
 </html>
+
